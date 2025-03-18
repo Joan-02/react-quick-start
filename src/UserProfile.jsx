@@ -5,10 +5,13 @@ const user = {
 }
 
 export const UserProfile = () => {
+
+    const { name, imageURL, imageSize } = user;
+
     return (
     <>
-        <h4>{user.name}</h4>
-        <img className='avatar' src={user.imageURL} alt="" style={{width: user.imageSize, height: user.imageSize}} />
+        <h4>{name}</h4>
+        <img className='avatar' src={imageURL} alt="" style={{width: imageSize, height: imageSize}} />
     </>
     )
 } 
